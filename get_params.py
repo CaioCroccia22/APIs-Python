@@ -5,6 +5,7 @@ import requests
 url = 'https://jsonplaceholder.typicode.com/posts/'
 
 # 2 - Adicionando o payload
+# Payload - É a mensagem que faz estar inputando dentro dos parametros des requisição via get 
 payload = {
     "id": [1, 2, 3, 4, 5],
     "userId": 1
