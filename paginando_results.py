@@ -27,3 +27,12 @@ for page_num in range(1, 3):
 # 4 - Apresentar os dados
 print(len(repos_list))
 print(repos_list[0][2]['name'])
+
+
+# 5 - Pegando o nome do repositório
+name_repos = []
+for page in repos_list:
+    for repo in page:
+        # print(repo['name'])
+        name_repos.append(repo['name'])
+print(len(name_repos))
