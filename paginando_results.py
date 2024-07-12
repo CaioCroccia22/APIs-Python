@@ -1,4 +1,5 @@
 import requests
+import pandas
 
 # 1 - Autenticação via Github
 access_token = ''
@@ -36,3 +37,8 @@ for page in repos_list:
         # print(repo['name'])
         name_repos.append(repo['name'])
 print(len(name_repos))
+
+
+# 8 - criando o DataFrame
+dados_obc = pandas.DataFrame()
+print(dados_obc)
