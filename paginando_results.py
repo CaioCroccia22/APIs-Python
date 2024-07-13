@@ -1,4 +1,5 @@
 import requests
+from collections import Counter
 import pandas
 
 # 1 - Autenticação via Github
@@ -39,6 +40,19 @@ for page in repos_list:
 print(len(name_repos))
 
 
+# 6 - Pegando a linguagem do repositorio
+lang_repos = []
+for page in repos_list:
+    for repo in page:
+        lang_repos.append(repo['language'])
+print(len(lang_repos))
+print(lang_repos[:10])
+
+# 7 - Contando ocorrências das linguagens
+print(Counter(lang_repos))
+
 # 8 - criando o DataFrame
 dados_obc = pandas.DataFrame()
+dados_obc['repo_name'] = name_repos
+dados_obc['repo_lang'] = lang_repos
 print(dados_obc)
