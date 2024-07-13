@@ -56,3 +56,6 @@ dados_obc = pandas.DataFrame()
 dados_obc['repo_name'] = name_repos
 dados_obc['repo_lang'] = lang_repos
 print(dados_obc)
+
+# 9 - Exportando para CSV
+dados_obc.to_csv('obc.csv')
