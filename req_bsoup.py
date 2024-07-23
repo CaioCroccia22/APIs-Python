@@ -31,3 +31,4 @@ python_clothes = pd.DataFrame()
 python_clothes['Brands'] = brands
 python_clothes['prices'] = prices 
 print(python_clothes)
+python_clothes.to_csv('Lista_de_roupas.csv')
